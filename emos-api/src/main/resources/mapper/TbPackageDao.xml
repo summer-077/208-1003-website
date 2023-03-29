@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.emos.api.db.dao.TbPackageDao">
+    <select id="searchPackageByPage" parameterType="HashMap" resultType="HashMap">
+        SELECT p.id,
+        u.id AS userId,
+        u.`name`,
+        p.number,
+        p.origin,
+        p.destination,
+        p.price,
+        DATE_FORMAT(p.create_time,'%Y-%m-%d') AS createTime
+        FROM tb_package p
+        JOIN tb_user u ON p.user_id = u.id
+        WHERE 1=1
+        <if test="userId != null">
+            AND u.id=#{userId}
+        </if>
+        <if test="name != null">
+            AND u.name LIKE '%${name}%'
+        </if>
+        <if test="number !=null">
+            AND p.number = #{number}
+        </if>
+        <if test="origin != null">
+            AND p.origin LIKE '%${origin}%'
+        </if>
+        <if test="destination != null">
+            AND p.destination LIKE '%${destination}%'
+        </if>
+    </select>
+
+
+    <select id="searchPackageCount" parameterType="HashMap" resultType="long">
+        SELECT COUNT(*)
+        FROM tb_package p
+        JOIN tb_user u ON p.user_id = u.id
+        WHERE 1=1
+        <if test="userId != null">
+            AND u.id=#{userId}
+        </if>
+        <if test="name != null">
+            AND u.name LIKE '%${name}%'
+        </if>
+        <if test="number !=null">
+            AND p.number = #{number}
+        </if>
+        <if test="origin != null">
+            AND p.origin LIKE '%${origin}%'
+        </if>
+        <if test="destination != null">
+            AND p.destination LIKE '%${destination}%'
+        </if>
+    </select>
+
+
+    <select id="searchPackageById" parameterType="HashMap" resultType="HashMap">
+        SELECT u.name,
+        u.sex,
+        d.dept_name AS dept,
+        l.type,
+        DATE_FORMAT( l.`start`, '%Y-%m-%d %H:%i' ) AS `start`,
+        DATE_FORMAT( l.`end`, '%Y-%m-%d %H:%i' ) AS `end`,
+        l.reason
+        FROM tb_leave l
+        JOIN tb_user u ON l.user_id = u.id
+        JOIN tb_dept d ON u.dept_id = d.id
+        WHERE l.id = #{id}
+        <if test="userId!=null">
+            AND u.id=#{userId}
+        </if>
+    </select>
+
+
+    <insert id="insert" parameterType="com.example.emos.api.db.pojo.TbPackage" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO tb_package
+        SET user_id = #{userId},
+            number = #{number},
+            origin = #{origin},
+            destination = #{destination},
+            price = #{price},
+            create_time = NOW()
+    </insert>
+
+
+    <update id="update" parameterType="HashMap">
+        UPDATE tb_package
+        SET number = #{number},
+            origin = #{origin},
+            destination = #{destination},
+            price = #{price}
+        WHERE id = #{id}
+    </update>
+
+
+    <delete id="deletePackageByIds" parameterType="HashMap">
+        DELETE FROM tb_package
+        WHERE id IN
+        <foreach collection="array" open="(" separator="," close=")" item="one">
+            #{one}
+        </foreach>
+    </delete>
+</mapper>

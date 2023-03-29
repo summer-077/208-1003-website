@@ -1,0 +1,51 @@
+## album 是画廊部分
+
+## header.ejs是头部各个链接
+
+##culture.ejs是企业文化部分
+
+## gallery.ejs是右上角的画廊部分，对应的数据也是gallery
+
+##index.ejs是进入的这个首页
+
+## archieve.ejs是首页新闻部分
+
+##heading.esj这个文件是我点开，产品、案例、新闻等这些右上角的文字，弹出的页面的头部的标语
+
+%% theme这个变量的值在config里面去找
+
+%%config.xxx是这个.ejs文件关联的yml配置文件的内容
+
+
+
+
+该.ejs文件何yaml配置文件是如何关联的呢，只需要取相同文件名字就可以了吗
+
+是的，通常情况下，Hexo 会根据 .ejs 文件的文件名，自动查找同名的 YAML 配置文件，并将它们关联起来。具体规则如下：
+
+对于在 source/_posts 目录下的 .md 文件，Hexo 会自动将其转换为对应的 .html 文件，并在 public 目录中生成一个同名的文件。例如，source/_posts/hello-world.md 会被转换为 public/hello-world/index.html。
+对于每个生成的 .html 文件，Hexo 会在源文件所在目录下查找同名的 .yml 或 .yaml 文件，并将它们与该文件关联起来。例如，对于 public/hello-world/index.html 文件，Hexo 会在 source/_posts/hello-world 目录下查找同名的 .yml 或 .yaml 文件，并将其与该文件关联起来。
+
+
+
+
+- name: 企业文化
+  hen_name: 
+  description: 潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿；临帝子之长洲，得天人之旧馆。
+  cover: /images/culture/icon_1.svg
+  cover_size: 64
+  link: 
+
+- name: 企业文化
+  en_name: 
+  description: 潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿；临帝子之长洲，得天人之旧馆。
+  cover: /images/culture/icon_2.svg
+  cover_size: 64
+  link: 
+
+- name: 企业文化
+  en_name: 
+  description: 潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿；临帝子之长洲，得天人之旧馆。
+  cover: /images/culture/icon_3.svghexo d
+  cover_size: 64
+  link: 
