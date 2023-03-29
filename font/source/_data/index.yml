@@ -46,10 +46,10 @@
 #   partial: solution
 #   bg_color: 
 
-- name: pricing
-  id: 
-  title: 定制计划
-  subtitle: 我们提供针对个人和团队的定制计划
-  partial: pricing
-  bg_color: 
+# - name: pricing
+#   id: 
+#   title: 定制计划
+#   subtitle: 我们提供针对个人和团队的定制计划
+#   partial: pricing
+#   bg_color: 
 
