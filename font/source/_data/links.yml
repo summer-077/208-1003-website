@@ -2,15 +2,11 @@
 # name:         文字/标题
 # link:         链接路径，无链接为空即可
 #
-- name: Acorn
-  link: https://acorn.imaging.xin/
+- name: 深圳技术大学
+  link: https://www.sztu.edu.cn/
 
-- name: Hexo
-  link: https://hexo.io/
+- name: 大数据与互联网学院
+  link: https://bdi.sztu.edu.cn/
 
-- name: GitHub
-  link: https://github.com
 
-- name: To Base64
-  link: https://duoyu.wang
 
