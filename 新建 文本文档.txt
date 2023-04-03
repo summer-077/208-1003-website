@@ -10,11 +10,15 @@
 
 ## archieve.ejs是首页新闻部分
 
+##archieve_post是新闻部分每个文章的内容
+
 ##heading.esj这个文件是我点开，产品、案例、新闻等这些右上角的文字，弹出的页面的头部的标语
 
 ##acorn中_config含有右上角显示的配置（关于、首页等）
 
 ##menu对应右上角配置
+
+##article是关于部分
 
 %% theme这个变量的值在config里面去找
 

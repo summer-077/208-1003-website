@@ -6,44 +6,44 @@
 # link:         链接路径，无链接为空即可
 # preview:      预览路径，无则可以为空
 #
-- name: 中文标题一
-  en_name: ENGLISH TITLE 1
-  description: 披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。
-  cover: /images/sample/mydesk.png
+- name: 面向泛在场景下的随身物品防丢系统
+  en_name: 
+  description: 场景化的物联网云管端系统，融合超高频RFID与无源标签对您的物品进行管理。
+  cover: /images/loss/two.jpg
   link: 
   preview: 
 
-- name: 中文标题二
-  en_name: ENGLISH TITLE 2
-  description: 披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。
-  cover: /images/sample/mydesk.png
+- name: 基于云端可视化的5G智能巡逻车系统设计
+  en_name: 
+  description: 本作品面向校园安防场景，通过物联网“端管云”思想，结合相应物联网技术，构建出一套从巡逻车移动端到云端云平台的智慧物联网安防系统，以弥补传统安防体系的不足之处，为未来物联网时代下的安防体系加入一层移动端的安防机制，助力保障校园安保，减少安保事故的发生。
+  cover: /images/patrolcar/智能巡逻车.jpg
   link: 
   preview: 
 
-- name: 中文标题三
-  en_name: ENGLISH TITLE 3
-  description: 披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。
-  cover: /images/sample/mydesk.png
+- name: 基于边缘计算的智能体测评判系统
+  en_name: 
+  description: 本系统采用高性能边缘计算方案，使用神经网络视觉实时提取摄像头拍摄画面中的人体关节点进行姿态重建，实现体测项目自动判分。
+  cover: /images/physics/斜面照.jpg
   link: 
   preview: 
 
-- name: 中文标题四
-  en_name: ENGLISH TITLE 4
-  description: 披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。
-  cover: /images/sample/mydesk.png
+- name: 面向5G超高速与大连接场景的边缘网关研制
+  en_name: 
+  description: 网关是不同设备不同网络协议之间实现数据传输的重要设备，有协议转换和数据处理的作用，通过边缘计算可以提高信息处理和传输效率。
+  cover: /images/5gAI/边缘网关.jpg
   link: 
   preview: 
 
 - name: 中文标题五
-  en_name: ENGLISH TITLE 5
+  en_name: 
   description: 披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。
-  cover: /images/sample/mydesk.png
+  cover: /images/loss/one.jpg
   link: 
   preview: 
 
-- name: 中文标题六
+- name: ⻛电设备运输智能感知系统
   en_name: ENGLISH TITLE 6
   description: 披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。
-  cover: /images/sample/mydesk.png
+  cover: /images/wind/one.jpg
   link: 
   preview: 

@@ -5,8 +5,8 @@
 #
 - name: album
   id: 
-  title: 画廊
-  subtitle: 只需要改变 2 个颜色就会让你的站点焕然一新
+  title: 项目·成果
+  subtitle: 探索更多，发现更好
   partial: album
   bg_color: 
   fluid: 
@@ -46,10 +46,10 @@
 #   partial: solution
 #   bg_color: 
 
-# - name: pricing
-#   id: 
-#   title: 定制计划
-#   subtitle: 我们提供针对个人和团队的定制计划
-#   partial: pricing
-#   bg_color: 
+- name: pricing
+  id: 
+  title: 定制计划
+  subtitle: 我们提供针对个人和团队的定制计划
+  partial: pricing
+  bg_color: 
 
