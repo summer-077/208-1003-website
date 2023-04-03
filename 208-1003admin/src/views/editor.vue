@@ -1,4 +1,5 @@
 <template>
+    <button @click="dianji">ceshi</button>
     <div id="div1"></div>
  
 </template>
@@ -7,14 +8,23 @@
 import E from 'wangeditor'
 export default{
     data(){
+        return{
+            editor:null
 
+        }
+        
     },
     mounted(){
-        const editor = new E('#div1')
-        editor.create()
+
+        this.editor = new E('#div1')
+        this.editor.create()
+      
 
     },
     methods:{
+        dianji(){
+            console.log("html",this.editor.txt.html())
+        }
 
     }
 
