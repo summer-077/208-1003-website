@@ -1,0 +1,19 @@
+<!-- 
+  Data Files: source/_data/album.yml
+  <%#= site.data.album.length %>
+-->
+<!-- 这里是画廊部分，里面的布局 <%#site.data.album[item]['name'] %>-->
+<div class="album-grid album-grid-6" id="album-grid">
+  <% for (var item in site.data.album){%>
+  <div class="album-grid-item">
+    <div class="album-art" style="background-image: url(<%=site.data.album[item]['cover']%>)">
+      <!-- site.data是 source/_data/album.yml当中的每一个对象，这里的意思是取了每个对象的cover这个值-->
+      <div class="album-art-text">
+        <h5 class="mb-0"><%= site.data.album[item]['name'] %></h5>
+        <small class="text-secondary d-block mb-3"><%=site.data.album[item]['en_name'] %></small>
+        <p class="font-w-lighter"><%=site.data.album[item]['description'] %></p>
+      </div>
+    </div>
+  </div>
+  <%} %>
+</div>

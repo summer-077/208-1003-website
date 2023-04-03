@@ -1,0 +1,12 @@
+<%
+  var title = '';
+  if (page.title) title = page.title; // 如果有页面标题，则使用页面标题作为标题
+  if (page.category) title = page.category; // 如果有页面分类，则使用分类名称作为标题
+  if (page.tag) title = "#" + "&nbsp" + page.tag; // 如果有页面标签，则在标签前加上 "#"，并作为标题
+  if (page.archive) {
+    if (page.year) title = page.year + (page.month ? '/' + page.month : ''); // 如果是归档页面，则使用年份和月份作为标题
+    else title = __('archive_a'); // 否则使用默认的“archive_a”作为标题
+  }
+%>
+<!-- 这里是白色大标题————关于两个字 -->
+<h1 class="page-type-title"><%- title %></h1>
